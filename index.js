@@ -1,4 +1,8 @@
 
+// setTimeout(()=>{
+//     alert("(⬅️) To Navigate click on Menu bar");
+// },3500);
+
 // Sidebar display section 
 
 document.querySelector(".sidebar").style.display = "none";
