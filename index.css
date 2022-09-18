@@ -181,11 +181,74 @@ nav a:hover::after{
     margin: 5px 10px;
 }
 
+
+/* Skills and  Tools  */
+
 #skills{
     text-align: center;
-    border:2px solid red;
     margin: 120px;
 }
-#frontend{
-    margin: 30px;
+#frontend,#backend{
+    margin: 80px;
+}
+#frontend>div,#backend>div{
+    display: grid;
+    /* width:90%; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,100px);
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+#frontend img,#backend img{
+    height:60px;
+}
+
+#backend>div{
+    grid-template-rows: repeat(3,100px);
+}
+
+
+  /* Projects  */
+
+  
+
+
+   /* Statistics  */
+
+#stats{
+    text-align: center;
+}
+#stats>h1{
+    margin: 150px 0 50px 0;
+}
+#stats>div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+#stats>div>div{
+    width:50px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#stats>div>div>div{
+    border: 5px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    border-radius: 80%;
+    padding: 50%;
+    margin: 20px;
+}
+#stats p{
+    width:100px;
+}
+#gitCommit>img{
+    margin:auto;
 }
