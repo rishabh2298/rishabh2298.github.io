@@ -1,246 +1,191 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');  
-/* font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
-/* font-family: 'Rubik', sans-serif; */
+/* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+
+/* <i id="ham" class="fa-solid fa-bars"></i>
+<i id="xmark" class="fa-solid fa-xmark"></i> */
 
 *{
     margin:0px;
-    padding:0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.icons{
+    margin-right: 15px;
+    color:black;
 }
 body{
-    display: flex;
-    width: 100%;
+    background-color: aliceblue;
+}
+
+#header{
     height: 100%;
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    background-position: center;
+    width: 100%;
 }
-
-/* Side bar  */
-
-.sidebar{
-    background-color: rgba(132, 130, 130, 0.721);
-    position: absolute;
-    height:100%;
-    width:20%;
-    font-family: 'Rubik', sans-serif;
-    display: flex;
-    flex-direction: column;;
-    transition: transform 0.4s ease-in;
-}
-#navControl{
-    /* background-color: rgb(233, 217, 217); */
-    display: flex;
+.container{
     position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding:0% 2%;
-    height:5%;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    /* moving part  */
+    position: sticky;
+    top: 0;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    z-index: 1;
+}
+nav>h2:first-child>i>span{
+    color: orangered;
+    font-size: 160%;
 }
 
-#nav ul{
-    font-size: 140%;
-    line-height: 300%;
-    margin:30% 20%;
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
-#nav li{
-    list-style-type: none;
-}
-#nav a{
+nav a{
     text-decoration: none;
-    color: rgb(229, 253, 248);
-}
-
-#nav a:hover{
-    color: black;
-    font-size: 120%;
-}
-.innernav{
-    display: flex;
-    align-items: center;
+    color: blue;
+    font-size: 18px;
     position: relative;
 }
-.innernav>i{
-    width:35px;
-    margin-right: 10%;
-}
-
-.innernav li::after{
+nav a::after{
     content: "";
+    background-color: rgb(241, 23, 3);
+    width: 0px;
+    height: 3px;
     position: absolute;
-    width:0%;
-    height:3px;
-    left:30%;
-    bottom:10px;
-    background: rgb(255, 0, 43);
+    left: 0;
+    bottom: -5px;
 }
-.innernav li:hover::after{
-    width:50%;
-    transition: 0.5s;
-}
-
-#ham{
-    position: absolute;
+nav a:hover::after{
+    width: 100%;
     cursor: pointer;
-    top:10px;
-    left:10px;
-    font-size: 150%;
-}
-#xmark{
-    position: absolute;
-    cursor: pointer;
-    top:10px;
-    left:10px;
-    font-size: 150%;
+    transition: 0.3s;
 }
 
+  /* Welcome  */
 
+  #welcome{
+      color: rgba(151, 6, 6, 0.701);
+      margin-top: 80px;
+  }
 
-/* Home  Section  */
+/*   Header  */
 
-#main{
-    margin: auto;
-}
-
-#home{
+.headerText{
     display: flex;
-    width:700px;
-    margin:5% 20%;
+    /* background-color: pink; */
+    margin: 80px 0;
+    justify-content: space-around;
 }
-#home1{
-    height:100%;
-    width:70%;
-}
-#home11>i:nth-child(1){
-    font-size: 45px;
+#ht>p{
+    font-size: 40px;
     font-weight: 700;
+    color:rgb(139, 6, 90);
 }
-span{
-    color: blue;
-}
-
-#home11>h1{
+#ht h1{
+    font-size: 50px;
     color: orangered;
-    font-size: 45px;
     margin: 20px 0;
 }
-
-#home11>h2{
-    font-size: 25px;
-    color: green;
+#ht>h2{
+    font-size: 26px;
+    color:green;
 }
-#home11>h2::after{
-    content: "👨‍💼";
-    margin-left: 20px;
+#ht>h3{
+    font-size: 22px;
 }
-
-#home11>h3{
-    font-size: 25px;
+#ht>h3>span{
+    color: blue;
 }
-#home11>h3::after{
-    content: "💻";
-    margin-left: 20px;
-}
-
-#home12{
-    margin-left: 50px;
-}
-#home12>a button{
-    margin-top: 35px;
-    padding: 5px 15px;
-    border-radius: 20px;
-    background-color: skyblue;
-}
-#home12>a button:hover{
-    background-color: blue;
-    color:white;
-    cursor: pointer;
-    padding:7px 18px;
-}
-#home12>div{
+#resumeblock{
+    margin: 50px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-#home12>div a img{
-    margin:20px 10px;
-    height:20px;
+#resumeblock button{
+    padding:5px 25px;
+    border-radius: 20px;
+}
+#resumeblock>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#resumeblock>a>button:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:7px 27px;
     cursor: pointer;
 }
-#home12>div a img:hover{
-    height:25px;
+
+#resumeblock div img{
+    height:30px;
+    margin: 20px;
 }
 
-#home2{
-    width: 30%;
-}
-#home2>img{
-    height: 200px;
-    border-radius:25% 5%;
-    margin-left: 40%;
+.headerText>img{
+    height: 15rem;
+    margin-top: 5rem;
+    border-radius: 50%;
 }
 
-   /* About  Sectino  */
+/* About  Section  */
 
 #about{
-    background-color: pink;
-    margin:auto;
     text-align: center;
+    width:60%;
+    margin:auto;
+}
+#about>p{
+    text-align: justify;
+    margin: 40px;
 }
 
-
-
-  /* for smartphone viwers  */
-
-
-@media all and (min-width: 100px) and (max-width:767px){
-
-    .sidebar{
-        width:50%;
-    }
-    #home{
-        display: block;
-        align-items: center;
-    }
-    #home2{
-        margin: 80px 60px;
-    }
-    #about{
-        margin: 15% 8%;
-        flex-wrap: wrap;
-    }
-
+#training{
+    margin: 50px;
+}
+#training>h2{
+    margin:25px;
+}
+#training>h3{
+    text-align: left;
+    font-style: italic;
+    color: orangered;
+}
+#training>h4{
+    text-align: left;
+    color:green;
+}
+#training>p{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#training>ul{
+    list-style: none;
+    text-align: left;
+    font-size: 16px;
+    margin: 5px 10px;
 }
 
-/* for tablet viwers  */
-
-@media all and (min-width:768px) and (max-width:1023px){
-
-    .sidebar{
-        width:40%;
-    }
-    #home{
-        display: block;
-        align-items: center;
-    }
-    #home2{
-        margin:50px;
-    }
-    #about{
-        margin:18% 8%;
-        flex-wrap: wrap
-    }
-
+#skills{
+    text-align: center;
+    border:2px solid red;
+    margin: 120px;
 }
-
-/* full screen 
-/* 
-@media screen and (min-width:1024px){
-
-    .sidebar{
-        width:22%;
-    }
-
-} */ 
+#frontend{
+    margin: 30px;
+}

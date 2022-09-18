@@ -9,84 +9,80 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
-
 <body>
-    <!-- Side bar  -->
-    <div class="sidebar sidebarClose">
-        <div id="nav">
-            <ul>
-                <div class="innernav">
-                    <i class="fa-solid fa-house"></i>
-                    <li><a href="#">Home</a></li>
-                </div>
-                <div class="innernav">
-                    <i class="fa-solid fa-user"></i>
-                    <li><a href="#">About</a></li>
-                </div>
-                <div class="innernav">
-                    <i class="fa-solid fa-computer"></i>
-                    <li><a href="#">Skills</a></li>
-                </div>
-                <div class="innernav">
-                    <i class="fa-solid fa-arrow-up-right-dots"></i>
-                    <li><a href="#">Statistics</a></li>
-                </div>
-                <div class="innernav">
-                    <i class="fa-solid fa-folder-tree"></i>
-                    <li><a href="#">Projects</a></li>
-                </div>
-                <div class="innernav">
-                    <i class="fa-sharp fa-solid fa-address-book"></i>
-                    <li><a href="#">Contact</a></li>
-                </div>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Main content  -->
-    <div id="main">
-        <div id="navControl">
-            <i id="ham" class="fa-solid fa-bars"></i>
-            <i id="xmark" class="fa-solid fa-xmark"></i>
-        </div>
-
-        <!-- Home Section  -->
-        <div id="home">
-            <div id="home1">
-                <div id="home11">
-                    <i><span>H</span>i, <span>I</span> am</i>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><i><span>R</span>ishabh <span>M</span>ishra</i></h2>
+                <ul>
+                    <li> <a href="#about">About </a> </li>
+                    <li> <a href="#skills">Skills</a> </li>
+                    <li> <a href="#stats">Statistics</a> </li>
+                    <li> <a href="#projects">Projects</a> </li>
+                    <li> <a href="#contact">Contact Me</a> </li>
+                </ul>  
+            </nav>
+            <marquee behavior="" direction="left"><h1 id="welcome">Welcome To My Portfolio</h1></marquee>
+            <div class="headerText">
+                <div id="ht">
+                    <p>Hi, I'm</p>
                     <h1>Rishabh Mishra</h1>
-                    <h2>Full Stack Web Developer</h2>
+                    <h2 >Full Stack Web Developer</h2>
                     <h3><span>Domain</span> : Java Backend Developer</h3>
-                </div>
-                <div id="home12">
-                    <a href="https://drive.google.com/file/d/1NNh9erGcpnTOsnT-QZYiT6JRFQn83dui/view?usp=sharing"
+                    <div id="resumeblock">
+                        <a href="https://drive.google.com/file/d/1NNh9erGcpnTOsnT-QZYiT6JRFQn83dui/view?usp=sharing"
                         target="_blank"><button>Resume</button></a>
-                    <div>
-                        <a href="https://github.com/rishabh2298" target="_blank"><img src="./images/git.png"
-                                alt="git"></a>
-                        <a href="https://www.linkedin.com/in/rishabh-mishra-07683915a" target="_blank"><img
-                                src="./images/linkedin.png" alt="linkedin"></a>
+                        <div>
+                            <a href="https://github.com/rishabh2298" target="_blank"><img src="./images/git.png"
+                                    alt="git"></a>
+                            <a href="https://www.linkedin.com/in/rishabh-mishra-07683915a" target="_blank"><img
+                                    src="./images/linkedin.png" alt="linkedin"></a>
+                        </div>
                     </div>
-                    </divi>
                 </div>
-            </div>
-            <div id="home2">
                 <img src="./images/profile.jpg" alt="profile">
             </div>
         </div>
-        <!-- About Section  -->
-        <div id="about">
-            <h1>About</h1>
-            <div id="aboutContent">
-                <p>Passion-driven learner and a full stack developer (domian: backend) who 
-                    has ability to write clean, reusable, optimised code. 
-                    Skilled and experienced at building and maintaining applications 
-                    source code.
-                    Looking forward to joining a progressive and challenging work
-                    environment.</p>
-            </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <h1 style="color: blue"><i class="fa-solid fa-user icons" ></i>About</h1>
+        <p>Passion-driven learner and a Full Stack Developer (Domian: Backend) who 
+            has ability to write clean, reusable and optimised code.<br>
+            Skilled and experienced at building and maintaining applications 
+            source code.
+            Good at Data Structure along with API's, Sql and Springboot.<br>
+            Looking forward to joining a progressive and challenging work
+            environment.</p>
+        <div id="training">
+                <h2>Training</h3>
+                <h3>Full Stack Web Developer</h3>
+                <h4>Masai School Bangalore</h4>
+                <p>Worked Extensively On :</p>
+                <ul>
+                    <li>- Java Backend</li>
+                    <li>- Front End (with Html, Css, JavaScript)</li>
+                    <li>- Data Structure and Algorithm</li>
+                    <li>- Soft Skills</li>
+                </ul>
         </div>
+    </div>
+    <div id="skills">
+        <h1 style="color:red;"><i class="fa-solid fa-computer icons"></i>Skills and Tools</h1>
+        <div id="frontend">
+            <h2>Front-End</h3>
+            <img src="./images/JavaScript.png" alt="js">
+        </div>
+    </div>
+    <div id="stats">
+        <h1><i class="fa-solid fa-arrow-up-right-dots icons"></i>Statistics</h1>
+    </div>
+    <div id="projects">
+        <h1><i class="fa-solid fa-folder-tree icons"></i>Projects</h1>
+    </div>
+    <div id="contact">
+        <h1><i class="fa-sharp fa-solid fa-address-book icons"></i>Contact Me</h1>
     </div>
 </body>
 
