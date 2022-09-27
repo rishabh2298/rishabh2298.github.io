@@ -22,7 +22,7 @@ body{
     background-color: aliceblue;
 }
 body>div>h1{
-    padding: 150px 0 50px 0;
+    padding: 120px 0 50px 0;
 }
 
 #header{
@@ -88,8 +88,10 @@ nav a:hover::after{
 
 .headerText{
     display: flex;
-    /* background-color: pink; */
-    margin-top: 80px;
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 80%;
+    margin-top: 6em;
     justify-content: space-around;
 }
 #ht>p{
@@ -117,6 +119,8 @@ nav a:hover::after{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
+    /* border: 1px solid black; */
 }
 #resumeblock button{
     padding:5px 25px;
@@ -249,6 +253,7 @@ nav a:hover::after{
   .cards:hover{
       top: -10px;
       box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      background-color: rgba(0, 0, 0, 0.138);
       cursor:pointer;
   }
 .projectImages>img{
@@ -316,7 +321,7 @@ nav a:hover::after{
     margin: 20px 0 30px 0;
 }
 #stats>div{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 50px auto;
@@ -353,3 +358,122 @@ nav a:hover::after{
     width:100%;
     margin:auto;
 }
+
+/* Contact Details  */
+
+#contact{
+    /* background-color: pink; */
+    width:90%;
+    margin: auto;
+    text-align: center;
+}
+#contact p{
+    font-size: 18px;
+    color: black;
+}
+#contact>div{
+    /* background-color: skyblue; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    line-height: 3em;
+    width: 50%;
+    margin: 70px auto;
+
+}
+#contact>div>p:nth-child(1) i{
+    font-size: 30px;
+    color: red;
+    margin-right:40px;
+    /* background-color: pink; */
+}
+#contact>div>p:nth-child(2) i{
+    font-size: 30px;
+    color: green;
+    margin-right:40px;
+    /* background-color: pink; */
+}
+#contact>div a{
+    display: flex ;
+    align-items: center;
+    /* border: 1px solid black; */
+    text-decoration: none;
+}
+#contact>div>a:nth-child(3) i{
+    font-size: 30px;
+    color: black;
+    margin-right:40px;
+    width: 35px;
+    /* background-color: pink; */
+}
+#contact>div>a:nth-child(4) i{
+    font-size: 30px;
+    color: blue;
+    width: 35px;
+    margin-right:40px;
+}
+#contact>div>a{
+    text-decoration: none;
+    display:inline-flex;
+}
+/* #contact>div:nth-child(3) i{
+    font-size: 30px;
+    color: black;
+    width:100px;
+    background-color: pink;
+} */
+
+/* #contact{
+    background-color: pink;
+    margin: 0 3em;
+    text-align: center;
+}
+#contact>h2{
+    width: 90%;
+}
+#contact>div{
+    background-color: saddlebrown;
+    width: 40%;
+    font-weight: 900;
+    text-align: start;
+    line-height: 4em;
+    margin:6em auto;
+}
+#contact>div>h3:nth-child(1) img{
+    width:2em; 
+    margin-right: 2em;
+
+}
+#contact>div>h3:nth-child(2) i{
+    color: blue;
+    font-size: 1.5em;
+    margin-right: 1.5em;
+}
+#contact>div>div{
+    border:1px solid black;
+    width: 20%;
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+#contact a{
+    text-decoration: none;
+    margin-right: 2.8em;
+}
+#contact>div>a:nth-child(3) i{
+    font-size: 2em;
+    color: black;
+    /* display: block; */
+    /* margin-top: 0.5em;
+}
+
+#contact>div>a:nth-child(5) i{
+    font-size: 2em;
+    color: blue;
+    background-color: white;
+    width:1.1em;
+    border-radius: 5px;
+    margin-top: 1em;
+} */ 
