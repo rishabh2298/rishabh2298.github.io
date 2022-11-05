@@ -354,10 +354,6 @@ nav a:hover::after{
     font-weight: 700;
     color: darkred;
 }
-#gitCommit>img{
-    width:100%;
-    margin:auto;
-}
 
 /* Contact Details  */
 
