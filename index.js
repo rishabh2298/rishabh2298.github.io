@@ -39,3 +39,14 @@
 //     hinduSection.innerHTML = image;
 //     hinduIndex++;
 // },2000)
+
+
+let sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-250px";
+}

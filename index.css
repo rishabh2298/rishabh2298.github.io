@@ -473,3 +473,41 @@ nav a:hover::after{
     border-radius: 5px;
     margin-top: 1em;
 } */ 
+
+
+/* ------------------------- small screen--------------------------------------- */
+
+nav .fa-regular, nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    nav .fa-regular, nav .fa-solid{
+        display: block;
+        font-size: 40px;
+    }
+    nav a{
+        color:wheat;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 250%;
+        margin: 0 auto;
+    }
+    nav ul{
+        background: darkcyan;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height:100%;
+        padding-top: 80px;
+        padding-left: 40px;
+        z-index: 2;
+    }
+    nav .fa-regular{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
