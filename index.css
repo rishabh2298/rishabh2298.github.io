@@ -357,6 +357,15 @@ nav a:hover::after{
     color: darkred;
 }
 
+/* -------------------------------github stats----------------------------- */
+
+#github_stats>div{
+    /* background-color: palegreen; */
+    margin: 3rem 30%;
+}
+
+
+
 /* Contact Details  */
 
 #contact{
