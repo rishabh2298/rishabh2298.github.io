@@ -483,7 +483,7 @@ nav .fa-regular, nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 820px){
     nav .fa-regular, nav .fa-solid{
         display: block;
         font-size: 40px;
@@ -524,6 +524,6 @@ nav .fa-regular, nav .fa-solid{
 
 @media only screen and (max-width: 480px){
     body{
-        /* background-color: black; */
+        margin:auto;
     }
 }
