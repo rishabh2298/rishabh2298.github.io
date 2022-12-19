@@ -477,29 +477,29 @@ nav a:hover::after{
 } */ 
 
 
-/* ------------------------- small screen--------------------------------------- */
+/* ------------------------- tablet screen--------------------------------------- */
 
 nav .fa-regular, nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
     nav .fa-regular, nav .fa-solid{
         display: block;
         font-size: 40px;
     }
     nav a{
-        color:rgba(250, 235, 215, 0.816);
+        color:white;
         font-weight: 900;
         font-size: 25px;
         line-height: 250%;
         margin: 0 auto;
     }
     nav a::after{
-        background-color: teal;
+        background-color: red;
     }
     nav ul{
-        background: orangered;
+        background: rgba(0, 0, 139, 0.814);
         position: fixed;
         top: 0;
         right: -250px;
@@ -510,9 +510,20 @@ nav .fa-regular, nav .fa-solid{
         z-index: 2;
     }
     nav .fa-regular{
+        color: rgb(165, 154, 154);
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+}
+
+
+
+/* ------------------------- mobile screen--------------------------------------- */
+
+@media only screen and (max-width: 480px){
+    body{
+        /* background-color: black; */
     }
 }
