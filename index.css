@@ -145,9 +145,10 @@ nav a:hover::after{
 }
 
 .headerText>img{
-    height: 15rem;
+    height: 20rem;
     margin-top: 5rem;
-    border-radius: 50%;
+    border-radius: 5%;
+    /* border: 5px solid rgba(250, 235, 215, 0.816); */
 }
 
 /* About  Section  */
@@ -488,14 +489,17 @@ nav .fa-regular, nav .fa-solid{
         font-size: 40px;
     }
     nav a{
-        color:wheat;
+        color:rgba(250, 235, 215, 0.816);
         font-weight: 900;
         font-size: 25px;
         line-height: 250%;
         margin: 0 auto;
     }
+    nav a::after{
+        background-color: teal;
+    }
     nav ul{
-        background: darkcyan;
+        background: orangered;
         position: fixed;
         top: 0;
         right: -250px;
