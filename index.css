@@ -359,9 +359,14 @@ nav a:hover::after{
 
 /* -------------------------------github stats----------------------------- */
 
+#github{
+    padding-right: 9%;
+    /* background-color: blue; */
+}
+
 #github_stats>div{
     /* background-color: palegreen; */
-    margin: 3rem 30%;
+    margin: 3rem 20%;
 }
 
 #github_stats+div{
@@ -527,6 +532,36 @@ nav .fa-regular, nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+
+
+    /* header text */
+
+    
+    .headerText{
+        display: block;
+        /* background-color: blue; */
+        text-align: center;
+    }
+
+
+
+/* -------github calender--------- */
+
+#github{
+    padding-right: 6%;
+    margin: 0 4% 0 -9%;
+    /* background-color: red; */
+}
+
+#github_stats{
+    margin-left:10%;
+}
+
+#github_stats+div{
+    margin: 5% -10% 0 0;
+    font-size: 10px;
+}
+
 }
 
 
@@ -538,12 +573,31 @@ nav .fa-regular, nav .fa-solid{
         margin-right:-100%;
     }
 
+
+    /* -----------------header text---------------- */
+
+.headerText{
+    display: block;
+    /* background-color: blue; */
+    text-align: center;
+}
+
+#resumeblock{
+    /* background-color: red; */
+    padding-top: 10px;
+}
+
     /*------------------ git calender ----------------*/
 
+#github{
+    padding-right: 8%;
+    /* margin-right: -2%; */
+    /* background-color: red; */
+}
     
 #github_stats+div{
-    margin: 5% 0;
-    /* padding: 5%; */
+    margin: 5% -10% 0 0;
+    /* padding-right: 110%; */
     font-size: 10px;
 }
 }
