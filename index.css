@@ -533,6 +533,6 @@ nav .fa-regular, nav .fa-solid{
 
 @media only screen and (max-width: 480px){
     body{
-        margin:auto;
+        margin-right:-100%;
     }
 }
