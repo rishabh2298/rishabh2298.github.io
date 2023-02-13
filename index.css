@@ -364,7 +364,9 @@ nav a:hover::after{
     margin: 3rem 30%;
 }
 
-
+#github_stats+div{
+    margin: 5% 10%;
+}
 
 /* Contact Details  */
 
@@ -535,4 +537,13 @@ nav .fa-regular, nav .fa-solid{
     body{
         margin-right:-100%;
     }
+
+    /*------------------ git calender ----------------*/
+
+    
+#github_stats+div{
+    margin: 5% 0;
+    /* padding: 5%; */
+    font-size: 10px;
+}
 }
