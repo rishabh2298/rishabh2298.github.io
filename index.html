@@ -8,10 +8,7 @@
     <title>Rishabh_Mishra_Portfolio</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
+    
 </head>
 
 <body>
@@ -26,7 +23,7 @@
                     <li> <a href="#stats" onclick="closemenu()">Statistics</a> </li>
                     <li> <a href="#projects" onclick="closemenu()">Projects</a> </li>
                     <li> <a href="#contact" onclick="closemenu()">Contact Me</a> </li>
-                    <li><a href="./downloads/fw19_0805_Rishabh_Mishra_Resume.pdf" download onclick="closemenu()">Resume</a></li>
+                    <li onclick="openResume()"><a href="./downloads/fw19_0805_Rishabh_Mishra_Resume.pdf" download target="_blank" onclick="closemenu()">Resume</a></li>
                     <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -41,8 +38,8 @@
                     <h2>Full Stack Web Developer</h2>
                     <h3><span>Domain</span> : Java Backend Developer</h3>
                     <div id="resumeblock">
-                        <a href="https://drive.google.com/file/d/1NNh9erGcpnTOsnT-QZYiT6JRFQn83dui/view?usp=sharing"
-                            target="_blank"><button>Resume</button></a>
+                        <a href="./downloads/fw19_0805_Rishabh_Mishra_Resume.pdf" download target="_blank"
+                        onclick="openResume()"><button>Resume</button></a>
                         <div>
                             <a href="https://github.com/rishabh2298" target="_blank"><img src="./images/git.png"
                                     alt="git"></a>
@@ -87,7 +84,8 @@
 
     <!-- Skills and Tools  -->
     <div id="skills">
-        <h1 style="color: darkblue"><i class="fa-solid fa-computer icons"></i>Skills and Tools</h1>
+        <!------------ tech stack------------>
+        <h1 style="color: darkblue margin"><i class="fa-solid fa-computer icons"></i>Tech Stack</h1>
         <div id="frontend">
             <h2>Front-End</h2>
             <hr>
@@ -103,14 +101,6 @@
                 <div>
                     <img src="./images/Html.png" alt="html">
                     <p>HTML</p>
-                </div>
-                <div>
-                    <img src="./images/netlify.png" alt="netlify">
-                    <p>Netlify</p>
-                </div>
-                <div>
-                    <img src="./images/vsCode.png" alt="vsCode">
-                    <p>VS-Code</p>
                 </div>
             </div>
         </div>
@@ -135,10 +125,6 @@
                     <p>Spring</p>
                 </div>
                 <div>
-                    <img src="./images/aws.png" alt="aws">
-                    <p>AWS</p>
-                </div>
-                <div>
                     <img src="./images/SpringBoot.png" alt="springboot">
                     <p>Spring Boot</p>
                 </div>
@@ -147,15 +133,35 @@
                     <p>D.S.A.</p>
                 </div>
                 <div>
+                    <img src="./images/" alt="">
+                </div>
+            </div>
+        </div>
+       <!------- tools ------->
+        <h1 style="color: darkblue margin"><i class="fa-solid fa-computer icons"></i>Tech Tools</h1>
+        <div id="tools">
+            <h2>Tools</h2>
+            <hr>
+            <div>
+                <div>
+                    <img src="./images/netlify.png" alt="netlify">
+                    <p>Netlify</p>
+                </div>
+                <div>
+                    <img src="./images/vsCode.png" alt="vsCode">
+                    <p>VS-Code</p>
+                </div>
+                <div>
                     <img src="./images/sts.png" alt="sts">
-                    <p>Spring Tool (IJ+)</p>
+                    <p>Spring Tool</p>
                 </div>
                 <div>
                     <img src="./images/git.png" alt="github">
                     <p>Git Hub</p>
                 </div>
                 <div>
-                    <img src="./images/" alt="">
+                    <img src="./images/aws.png" alt="aws">
+                    <p>AWS</p>
                 </div>
             </div>
         </div>
@@ -169,7 +175,8 @@
                 <h2>The Hindu</h2>
                 <div class="projectImages"><img src="./images/hindu1.png" alt="hindu"></div>
                 <p>It's a static clone of the e-Newspaper App which is a group project of 5 members. 
-                    <br>-My contribution is the landing page in this app.
+                    <br>- My contribution is the landing page in this app.
+                    <br>- I have implemented unique css & js code to make it more responsive.
                 </p>
                 <h5>Tech Stack : JavaScript | Html | Css</h5>
                 <div>
@@ -184,8 +191,9 @@
                     social networks, by providing schedule posts to Twitter, Facebook, 
                     Instagram. 
                     <br>- My contribution is login, sign-up, analytics and customer pages in this app.
+                    <br>- Here I have use oop's concept, import-export to make it responsive.
                 </p>
-                <h5>Tech Stack : JavaScript (opp's(classes),import-export) | Html | Css</h5>
+                <h5>Tech Stack : Advance JavaScript | Html | Css</h5>
                 <div>
                     <a href="https://github.com/rishabh2298/wise-bikes-234.git" target="_blank"><button><i class="fa-brands fa-github"></i>Code</button></a>
                     <a href="https://ephemeral-mousse-4dc325.netlify.app/" target="_blank"><button><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>Live</button></a>
@@ -297,8 +305,8 @@
         <h2>I’m currently looking to join a new team of developers.If you think we might 
             be a good fit for one another, give me a call in or send me an email</h2>
         <div>
-            <p><i class="fa-regular fa-envelope"></i> rishabhmishra2298@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> +91-7000166263</p>
+            <a href="mailto:rishabhmishra2298@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> <p>rishabhmishra2298@gmail.com</p></a>
+            <a href="tel:+917000166263" target="_blank"><i class="fa-solid fa-phone"></i> <p> +91-7000166263</p></a>
             <a href="https://github.com/rishabh2298" target="_blank"><i class="fa-brands fa-github"></i> <p>Github</p></a>
             <a href="https://www.linkedin.com/in/rishabh-mishra-07683915a" target="_blank"><i class="fa-brands fa-linkedin-in"></i> <p>Linked-In</p></a>
         </div>
@@ -312,16 +320,12 @@
   src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
 
+<link rel="stylesheet"href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
 <script>
     GitHubCalendar(".calendar", "rishabh2298");
 
     // or enable responsive functionality:
     GitHubCalendar(".calendar", "rishabh2298", { responsive: true });
 
-    // Use a proxy
-    GitHubCalendar(".calendar", "rishabh2298", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${username}`)
-       }
-    }).then(r => r.text())
 </script>

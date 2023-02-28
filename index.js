@@ -50,3 +50,8 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right = "-250px";
 }
+
+
+function openResume(){
+    window.open("https://drive.google.com/file/d/1NNh9erGcpnTOsnT-QZYiT6JRFQn83dui/view?usp=sharing", "_blank")
+}

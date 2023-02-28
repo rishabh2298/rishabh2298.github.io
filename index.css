@@ -19,7 +19,8 @@
     color:black;
 }
 body{
-    background-color: aliceblue;
+    margin: auto;
+    background-color: rgba(218, 224, 229, 0.729);
 }
 body>div>h1{
     padding: 120px 0 50px 0;
@@ -195,13 +196,19 @@ nav a:hover::after{
 
 #skills{
     text-align: center;
-    margin: 120px;
-    margin-top: 0px;
+    margin: 140px 120px;
+    /* background-color: blue; */
 }
-#frontend,#backend{
-    margin: 80px;
+#skills>h1{
+    margin-bottom: 60px;
 }
-#frontend>div,#backend>div{
+#frontend,#tools{
+    margin: 0px 80px -20px;
+}
+#backend{
+    margin: 0px 80px -130px;
+}
+#frontend>div,#backend>div,#tools>div{
     display: grid;
     /* width:90%; */
     grid-template-columns: repeat(3,1fr);
@@ -211,12 +218,12 @@ nav a:hover::after{
     align-items: center;
     margin: 30px auto;
 }
-#frontend img,#backend img{
+#frontend img,#backend img,#tools img{
     height:60px;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     border-radius: 10px;
 }
-#frontend img:hover,#backend img:hover{
+#frontend img:hover,#backend img:hover,#tools img:hover{
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 65px;
@@ -360,17 +367,19 @@ nav a:hover::after{
 /* -------------------------------github stats----------------------------- */
 
 #github{
-    padding-right: 9%;
+    padding: 0 auto;
+    margin: auto;
     /* background-color: blue; */
 }
 
 #github_stats>div{
     text-align: center;
     /* background-color: palegreen; */
-    margin: 3rem 20%;
+    /* margin: 3rem 20%; */
 }
 
 #github_stats+div{
+    border: 1px solid black;
     margin: 5% 10%;
 }
 
@@ -396,13 +405,13 @@ nav a:hover::after{
     margin: 70px auto;
 
 }
-#contact>div>p:nth-child(1) i{
+#contact>div>a:nth-child(1) i{
     font-size: 30px;
     color: red;
     margin-right:40px;
     /* background-color: pink; */
 }
-#contact>div>p:nth-child(2) i{
+#contact>div>a:nth-child(2) i{
     font-size: 30px;
     color: green;
     margin-right:40px;
@@ -431,67 +440,6 @@ nav a:hover::after{
     text-decoration: none;
     display:inline-flex;
 }
-/* #contact>div:nth-child(3) i{
-    font-size: 30px;
-    color: black;
-    width:100px;
-    background-color: pink;
-} */
-
-/* #contact{
-    background-color: pink;
-    margin: 0 3em;
-    text-align: center;
-}
-#contact>h2{
-    width: 90%;
-}
-#contact>div{
-    background-color: saddlebrown;
-    width: 40%;
-    font-weight: 900;
-    text-align: start;
-    line-height: 4em;
-    margin:6em auto;
-}
-#contact>div>h3:nth-child(1) img{
-    width:2em; 
-    margin-right: 2em;
-
-}
-#contact>div>h3:nth-child(2) i{
-    color: blue;
-    font-size: 1.5em;
-    margin-right: 1.5em;
-}
-#contact>div>div{
-    border:1px solid black;
-    width: 20%;
-    font-size: 18px;
-    font-weight: 900;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2em;
-}
-#contact a{
-    text-decoration: none;
-    margin-right: 2.8em;
-}
-#contact>div>a:nth-child(3) i{
-    font-size: 2em;
-    color: black;
-    /* display: block; */
-    /* margin-top: 0.5em;
-}
-
-#contact>div>a:nth-child(5) i{
-    font-size: 2em;
-    color: blue;
-    background-color: white;
-    width:1.1em;
-    border-radius: 5px;
-    margin-top: 1em;
-} */ 
 
 
 /* ------------------------- tablet screen--------------------------------------- */
@@ -500,7 +448,7 @@ nav .fa-regular, nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 820px){
+@media only screen and (max-width: 910px){
     nav .fa-regular, nav .fa-solid{
         display: block;
         font-size: 40px;
@@ -546,22 +494,15 @@ nav .fa-regular, nav .fa-solid{
 
 
 
-/* -------github calender--------- */
+    /* -------github calender--------- */
 
-#github{
-    padding-right: 6%;
-    margin: 0 4% 0 -9%;
-    /* background-color: red; */
-}
+    #github_stats{
+        margin: auto;
+    }
 
-#github_stats{
-    margin-left:10%;
-}
-
-#github_stats+div{
-    margin: 5% -10% 0 0;
-    font-size: 10px;
-}
+    #github_stats>div{
+        text-align: center;
+    }
 
 }
 
@@ -577,28 +518,30 @@ nav .fa-regular, nav .fa-solid{
 
     /* -----------------header text---------------- */
 
-.headerText{
-    display: block;
-    /* background-color: blue; */
-    text-align: center;
-}
+    .headerText{
+        display: block;
+        /* background-color: blue; */
+        text-align: center;
+    }
 
-#resumeblock{
-    /* background-color: red; */
-    padding-top: 10px;
-}
+    #resumeblock{
+        /* background-color: red; */
+        padding-top: 10px;
+    }
 
-    /*------------------ git calender ----------------*/
+        /*------------------ git calender ----------------*/
 
-#github{
-    padding-right: 8%;
-    /* margin-right: -2%; */
-    /* background-color: red; */
-}
-    
-#github_stats+div{
-    margin: 5% -10% 0 0;
-    /* padding-right: 110%; */
-    font-size: 10px;
-}
+    #github{
+        padding-right: 8%;
+        margin: auto;
+        /* background-color: red; */
+    }
+
+
+    #github{
+        padding-right: 8%;
+        /* margin-right: -2%; */
+        /* background-color: red; */
+    }
+
 }
