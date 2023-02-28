@@ -365,6 +365,7 @@ nav a:hover::after{
 }
 
 #github_stats>div{
+    text-align: center;
     /* background-color: palegreen; */
     margin: 3rem 20%;
 }
