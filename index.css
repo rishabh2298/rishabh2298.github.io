@@ -267,7 +267,12 @@ nav a:hover::after{
   }
 .projectImages>img{
     width:100%;
-    height:50%;
+    height:60%;
+    margin: 10% 0;
+}
+.project_logo>img{
+    width:80%;
+    height:-500%;
     margin: 10% 0;
 }
 .cards h5{
