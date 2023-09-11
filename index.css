@@ -392,6 +392,29 @@ nav a:hover::after{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
 }
 
+#backcal1{
+    background-color:  rgba(218, 224, 229, 0.729);
+    padding-bottom: 50px;
+    
+
+   }
+
+   #cal1{
+    background-color: #130102a4;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    
+   }
+
+   .imggg1{
+    margin: auto;
+    height: auto
+    
+   }
+
+
 /* Contact Details  */
 
 #contact{
