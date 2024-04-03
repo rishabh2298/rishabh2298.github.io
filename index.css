@@ -414,6 +414,10 @@ nav a:hover::after{
     
    }
 
+   .calendar{
+    padding : 0.5% 2%;
+   }
+
 
 /* Contact Details  */
 
